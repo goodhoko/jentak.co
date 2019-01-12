@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dárek pro Mámu a Tátu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="images/gift.png"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Ahoj!</h2>
+					</header>
+					<p>Ujistěte se, že máte:<br>
+					-<br>
+					<b>čas od 8. (ráno) do 10. (večer) června</b><br>
+					<b>teplý ponožky.</b><br>
+					-<br>
+					Další informace se objeví tady za <b><span id="countdown"></span></b><br>
+					<i>Ježíšek.</i>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script>
+				var countDownDate = new Date("Jun 4, 2018 20:00:00").getTime();
+				var x = setInterval(function() {
+					var now = new Date().getTime();
+					var distance = countDownDate - now;
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+					document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m"
+					if (distance < 0) {
+						clearInterval(x)
+					}
+				}, 1000);
+			</script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

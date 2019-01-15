@@ -3,6 +3,7 @@
 <head>
 	<meta charset='UTF-8'/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
 	<title>Jen</title>
 	<link rel="shortcut icon" href="/resources/img/favicon.png">
 	<style type="text/css">
@@ -28,13 +29,23 @@
 			max-height: 100vh;
 			width: 500px;
 		}
-		a:visited {
+		a, a:visited {
+			line-height: 1.3em;
 			color: inherit;
 		}
 		#info {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
+			padding-bottom: 1em;
+		}
+		h1 {
+			margin: 0;
+		}
+		@media screen and (min-width: 801px) {
+			#info {
+				margin-left: 4em;
+			}
 		}
 		@media screen and (max-width: 800px) {
 			body {
@@ -57,8 +68,8 @@
 	<img id="jen" src="/resources/img/jen.jpg">
 	<div id="info">
 		<h1>Jen</h1>
-		<span>jen@buhvi.co</span>
-		<span>+420 774 619 385</span>
+		<a href="mailto:jen@buhvi.co">jen@buhvi.co</a>
+		<a href="tel:+420774619385">+420 774 619 385</a>
 		<a href="https://zadnyspe.ch" target="_blank">blog</a>
 	</div>
 </body>

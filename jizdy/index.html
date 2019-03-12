@@ -14,7 +14,6 @@
         }
         a, a:visited {
             text-decoration: none;
-            border-bottom: 1px dashed;
             color: #000;
         }
         p {
@@ -24,15 +23,27 @@
             width: 100%;
             height: auto;
         }
+        #past .ride {
+            margin-top: 2em;
+        }
         .date {
             font-size: 1.2em;
         }
+        p a, a.link {
+            border-bottom: 1px dashed;
+            text-decoration: none;
+        }
+        a, a:visited {
+            color: inherit;
+        }
         .gallery {
             margin: 1em 0 0 0;
+            display: flex;
             overflow-x: scroll;
         }
         .gallery img {
             width: 100px;
+            margin-right: 0.5em;
             height: auto;
         }
         hr {
@@ -47,23 +58,38 @@
     <img id="header-image" src="./img/R1-22.jpg">
     <h1>Praha FixedGear</h1>
     <p>Každejch ~14 dní se jedeme projet na fixkách po Praze. Otevřeno všem kolům i lidem. Sraz na piazzettě Národního divadla.</p>
-    <p class="contact">Kontakt: Honza +420 774 619 385</p>
+    <p class="contact">Komunikujeme v <a href="https://m.me/join/AbZu8ZlCT11-WuMx" target="_blank">messenger skupině</a>. Případně telefon na Honzu: +420 774 619 385</p>
 
     <h2>Další nejbližší</h2>
     <div class="ride">
-        <p class="date">7. 3. 2019 19:30</p>
-        <p class="description">Tenkorát míň kopců. Dáme to asi podélvodní, vystoupáme třeba někam na Břežany a pivko tentokrát ve Fajne Ďuře na Hamru.</p>
+        <p class="date">20. 3. 2019 18:30</p>
+        <p class="description">První jarní den! Konečně začneme za světla. Končit budeme za tmy.</p>
     </div>
 
     <hr>
 
     <h2>Máme za sebou</h2>
-    <div class="ride">
-        <p class="date">20. 2. 2019 18:00</p>
-        <p class="description">První výkop. Vítkov, Žižkov, Střížkov, Bohnice, pivovar Šedivák, Bohnická down, Holešovice a pivko v BK_JS.</p>
-        <div class="gallery">
-            <a href="./img/FMUtfstzCTNf6M70dAp-jZE0cvKh1zpYy3wjU6pBkI0-1536x2048.jpg"></a>
-            <a href="./img/dWXRFvfcGk_jlWpaoW5NbLa7207OgNna2uq8grz0kas-1536x2048.jpg"></a>
+    <div id="past">
+        <div class="ride">
+            <p class="date">7. 3. 2019 19:30</p>
+            <p class="description">Blbnutí na pumptracku v Braníku, trochu kopců a sjezdů, průjezd myšíma dírama ve Strašnicích, trénink na Last Man Standing na dopravnim hřišti, pivo v country hospodě u Káji Špulíka.</p>
+            <a href="https://www.strava.com/activities/2197966594" class="link" target="_blank">Strava</a>
+            <div class="gallery">
+                <a href="./img/IMG_0859.jpg"></a>
+                <a href="./img/IMG_0863.jpg"></a>
+                <a href="./img/IMG_0872.jpg"></a>
+                <a href="./img/IMG_0880.jpg"></a>
+            </div>
+        </div>
+
+        <div class="ride">
+            <p class="date">20. 2. 2019 18:00</p>
+            <p class="description">První výkop. Vítkov, Žižkov, Střížkov, Bohnice, pivovar Šedivák, Bohnická down, Holešovice a pivko v BK_JS.</p>
+            <a href="https://www.strava.com/activities/2187047134" class="link" target="_blank">Strava</a>
+            <div class="gallery">
+                <a href="./img/FMUtfstzCTNf6M70dAp-jZE0cvKh1zpYy3wjU6pBkI0-1536x2048.jpg"></a>
+                <a href="./img/dWXRFvfcGk_jlWpaoW5NbLa7207OgNna2uq8grz0kas-1536x2048.jpg"></a>
+            </div>
         </div>
     </div>
 

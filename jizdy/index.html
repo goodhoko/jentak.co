@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praha FixedGear</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <meta property="og:title" content="Praha FixedGear" />
+    <meta property="og:url" content="https://buhvi.co/jizdy" />
+    <meta property="og:image" content="https://buhvi.co/jizdy/img/R1-22.jpg" />
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+        body {
+            font-family: "Cutive Mono";
+            padding: 1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        a, a:visited {
+            text-decoration: none;
+            color: #000;
+        }
+        p {
+            margin: 0;
+        }
+        #header-image {
+            width: 100%;
+            height: auto;
+        }
+        #past .ride {
+            margin-top: 2em;
+        }
+        .date {
+            font-size: 1.2em;
+        }
+        p a, a.link {
+            border-bottom: 1px dashed;
+            text-decoration: none;
+        }
+        a, a:visited {
+            color: inherit;
+        }
+        .gallery {
+            margin: 1em 0 0 0;
+            display: flex;
+            overflow-x: scroll;
+        }
+        .gallery img {
+            width: 100px;
+            margin-right: 0.5em;
+            height: auto;
+        }
+        hr {
+            width: 100%;
+            border-bottom: 1px solid #000;
+            margin: 2em 0;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" /> 
+</head>
+<body>
+    <img id="header-image" src="./img/R1-22.jpg">
+    <h1>Praha FixedGear</h1>
+    <p>Každejch ~14 dní se jedeme projet na fixkách po Praze. Otevřeno všem kolům i lidem. Sraz na piazzettě Národního divadla.</p>
+    <p class="contact">Komunikujeme v <a href="https://m.me/join/AbZu8ZlCT11-WuMx" target="_blank">messenger skupině</a>. Případně telefon na Honzu: +420 774 619 385</p>
+
+    <h2>Další nejbližší</h2>
+    <div class="ride">
+        <p class="date">3. 4. 2019 18:30</p>
+        <p class="description">Vyhlížíme slunce a a jízdu v kraťasech.</p>
+    </div>
+
+    <hr>
+
+    <h2>Máme za sebou</h2>
+    <div id="past">
+        <div class="ride">
+            <p class="date">20. 3. 2019 18:30</p>
+            <p class="description">8 fixek v provozu. Úplněk na obloze a noční stoupání do Břežankýho pivovaru. Pár piv, brko a bombimg noční Točný dolů. Nějaký ty červený a pak na nás týpek z báwa mává kvérem. Zakončující P ve Standardu.</p>
+            <a href="https://www.strava.com/activities/2228219042" class="link" target="_blank">Strava</a>
+            <div class="gallery">
+                <a href="./img/54354355_370479937122999_5353457257340207104_n.jpg"></a>
+                <a href="./img/54515600_284162902484621_4203554801209835520_n.jpg"></a>
+                <a href="./img/54516606_411577949417515_2836412791873601536_n.jpg"></a>
+                <a href="./img/54521800_1151874884971074_8107283604842741760_n.jpg"></a>
+            </div>
+        </div>
+
+        <div class="ride">
+            <p class="date">7. 3. 2019 19:30</p>
+            <p class="description">Blbnutí na pumptracku v Braníku, trochu kopců a sjezdů, průjezd myšíma dírama ve Strašnicích, trénink na Last Man Standing na dopravnim hřišti, pivo v country hospodě u Káji Špulíka.</p>
+            <a href="https://www.strava.com/activities/2197966594" class="link" target="_blank">Strava</a>
+            <div class="gallery">
+                <a href="./img/IMG_0859.jpg"></a>
+                <a href="./img/IMG_0863.jpg"></a>
+                <a href="./img/IMG_0872.jpg"></a>
+                <a href="./img/IMG_0880.jpg"></a>
+            </div>
+        </div>
+
+        <div class="ride">
+            <p class="date">20. 2. 2019 18:00</p>
+            <p class="description">První výkop. Vítkov, Žižkov, Střížkov, Bohnice, pivovar Šedivák, Bohnická down, Holešovice a pivko v BK_JS.</p>
+            <a href="https://www.strava.com/activities/2187047134" class="link" target="_blank">Strava</a>
+            <div class="gallery">
+                <a href="./img/FMUtfstzCTNf6M70dAp-jZE0cvKh1zpYy3wjU6pBkI0-1536x2048.jpg"></a>
+                <a href="./img/dWXRFvfcGk_jlWpaoW5NbLa7207OgNna2uq8grz0kas-1536x2048.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.gallery a').each(function(i, e){
+                e = $(e)
+                e.append($('<img>', {src: e.attr('href')}))
+            })
+            $('.gallery').lightGallery(); 
+        });
+    </script>
+
+</body>
+</html>

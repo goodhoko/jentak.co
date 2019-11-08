@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono:700|Ubuntu+Mono&display=swap');
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 1.2;
+    transition:         background-color 1000ms ease-in-out,
+                        color 1000ms ease-in-out;
+    -webkit-transition: background-color 1000ms ease-in-out,
+                        color 1000ms ease-in-out;
+    -ms-transition:     background-color 1000ms ease-in-out,
+                        color 1000ms ease-in-out;
+
+}
+    body.pale {
+        background-color: #fefefe;
+        color: #111111;
+    }
+    body.dark {
+        background-color: #010101;
+        color: #fafafa;
+    }
+
+.toggle {
+    position: absolute;
+    right: -1em;
+    top: -1em;
+}
+    .toggle .day, .toggle .night {
+        position: absolute;
+        top: 0em;
+        right: 0em;
+        font-size: 4em;
+        cursor: pointer;
+        transition: right 1000ms ease-in-out;
+        -webkit-transition: right 1000ms ease-in-out;
+        -ms-transition: right 1000ms ease-in-out;
+    }
+    .pale .toggle .day {
+        right: -4em;
+    }
+    .dark .toggle .night {
+        right: -4em;
+    }
+
+
+.wrapper {
+    max-width: 800px;
+    margin: 10em auto;
+    padding: 0 1em;
+}
+
+.images {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+}
+    .images img {
+        position: absolute;
+        left: 0em;
+        top: 0em;
+        width: 100%;
+        height: auto;
+        transition: opacity 1000ms ease-in-out;
+        -webkit-transition: opacity 1000ms ease-in-out;
+        -ms-transition: opacity 1000ms ease-in-out;
+
+    }
+    .pale .images img.dark {
+        opacity: 0;
+
+    }
+    .dark .images img.pale {
+        opacity: 0;
+    }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'B612 Mono', monospace;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+p, ul {
+    margin-top: 0.3em;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+a, a:visited {
+    color: inherit;
+}
+

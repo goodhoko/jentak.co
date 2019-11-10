@@ -1,5 +1,5 @@
 # Jan Koutný
-Young backend developer based in Prague with an aim for hard problems.
+Young backend developer based in Prague with a flair for hard problems.
 
 ## What I'm good at
 - **Learning** has always been my top strength. I'm fast at understanding complex problems and I genuinely enjoy it. I'm always seeking new stuff to wrap my head around.
@@ -10,7 +10,7 @@ Young backend developer based in Prague with an aim for hard problems.
 ## What I'm not good at
 - **Quickly bodging dirty solutions** is definitely not my forte.
 - **Estimating time and effort** needed to finish a task is a skill I both need and want to improve.
-- Although I've been doing it in my past jobs **managing people** is a topic I could be much better at.
+- Although I've been doing it in my past jobs **managing people** is an area I could be much better in.
 
 ## Stuff I've done
 For the last 3 years, I've been working at a fresh Czech startup [GoOut.net](https://goout.net/). It's a cultural guide, ticket selling solution, and social network. I grew there from writing my first simple PHP scripts to deploying complex backend services gaining most of my practical skills along the way. Here are some projects I did there:
@@ -29,7 +29,7 @@ GoOut is my first real programming job. Prior that (during high school) I was fu
 
 ### Education
 - Bachelor in Knwoledge Engineering at [Faculty of Information Technology](https://fit.cvut.cz/en) of [Czech Technical University](https://www.cvut.cz/en) (2015 - 2019)
-- Math oriented class at [Gymnázium Christiana Dopplera](https://gchd.cz/) highschool (2010 - 2015)
+- Math focused class at [Gymnázium Christiana Dopplera](https://gchd.cz/) highschool (2010 - 2015)
 
 ## Stuff I'd like to do
 I'm interested in literally anything requiring hard thinking, research and learning. Finding solutions is the fun part although I'm not scared of the subsequent coding labor. Especially high-velocity high-tech web applications is what intrigues me.

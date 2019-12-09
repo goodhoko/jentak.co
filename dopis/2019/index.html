@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Milý Ježíšku</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			body {
+				font-family: serif;
+				font-size: 1.1em;
+				display: flex;
+				color: #eee;
+				justify-content: center;
+				background-position: center;
+				background-size: cover;
+				background: linear-gradient(#ff6cb9, #d27e7a);
+				line-height: 1.4;
+				min-height: 100vh;
+			}
+			div {
+				max-width: 400px;
+			}
+
+			a, a:visited {
+				text-decoration: none;
+				border-bottom: 1px dashed;
+				color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Milý Ježíšku,</h1>
+			<p>Vánoce jsou zase za rohem ty jistě zase přemýšlíš, čím bys mi mohl udělat radost a jakým dárkem mě obdarovat. Vypůjčím si slova z dopisu, co jsem ti psal před rokem.</p>
+			<p>Upřímně jsem z celý týhle Vánoční představy o kupování dárku už úplně znechucenej. Nic mi netrhá srdce víc, než představa fyzický věci, kterou musel někdo vyrobit a potom někdo koupit, která nenachází svůj užitek. Ne fakt, taková představa mě dokonce trochu nasírá.</p>
+			<p>A tak si se mnou letos nemusíš dělat hlavu. Dárky opravdu nechci žádný. Všechno, co potřebuju, mám a co nemám si seženu sám. Největší radost mi udělá, když se letos prostě sejdeme u jednoho stolu a na chvíli se zastavíme v čase.</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function toHsl(params) {
+			p = params.map(function(e) {return Math.floor(e)})
+			return 'hsl(' + p[0] + ', ' + p[1] + '%, ' + p[2] + '%)'
+		}
+
+		var prevx = 0,
+			prevy = 0;
+
+		document.addEventListener('mousemove', function(e) {
+			var x = e.clientX,
+				y = e.clientY,
+				xp = x / window.innerWidth,
+				yp = y / window.innerHeight,
+				dx = Math.abs(prevx - x),
+				dy = Math.abs(prevy - y),
+				ds = Math.floor(Math.sqrt((dx * dx) + (dy * dy)))
+			
+			// var s = 'linear-gradient(#' + x.toString(16) + ', #' + y.toString(16) + ')'
+			var s = 'linear-gradient(' + toHsl([xp * 360, 100 - (ds % 100), yp * 100]) + ', ' + toHsl([(ds % 360), yp * 100, xp * 100]) + ')'
+			document.body.style.background = s
+
+			prevx = x
+			prevy = y
+		})
+	</script>
+</html>

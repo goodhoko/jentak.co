@@ -1,5 +1,5 @@
 # Jan Koutný
-Young backend developer based in Prague with a flair for hard problems.
+Young backend developer based in Prague with an aim for hard problems.
 
 ## What I'm good at
 - **Learning** has always been my top strength. I'm fast at understanding complex problems and I genuinely enjoy it. I'm always seeking new stuff to wrap my head around.

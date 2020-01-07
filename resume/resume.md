@@ -32,7 +32,10 @@ GoOut is my first real programming job. Prior that (during high school) I was fu
 - Math focused class at [Gymnázium Christiana Dopplera](https://gchd.cz/) highschool (2010 - 2015)
 
 ## Stuff I'd like to do
-I'm interested in literally anything requiring hard thinking, research and learning. Finding solutions is the fun part although I'm not scared of the subsequent coding labor. Especially high-velocity high-tech web applications is what intrigues me.
+- I want to be the stupidest in the room constantly learning new stuff.
+- I enjoy the process of development from feature specification to deployment. I like to have a say in every stage of that process.
+- I have no interest in working for digital agencies spitting one app after another. I'd rather work on one product gradually bringing it to perfection.
+- Showing up in one office every day seems like a thing of the past century to me. Remote is the way to roll.
 
 ## Where to catch me
 - [jen@buhvi.co](mailto:jen@buhvi.co)

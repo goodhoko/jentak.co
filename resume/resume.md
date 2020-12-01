@@ -1,5 +1,5 @@
 # Jan Koutný
-Young backend developer based in Prague with an aim for hard problems.
+Young software engineer with a taste for hard problems.
 
 ## What I'm good at
 - **Learning** has always been my top strength. I'm fast at understanding complex problems and I genuinely enjoy it. I'm always seeking new stuff to wrap my head around.
@@ -13,13 +13,13 @@ Young backend developer based in Prague with an aim for hard problems.
 - Although I've been doing it in my past jobs **managing people** is an area I could be much better in.
 
 ## Stuff I've done
-For the last 3 years, I've been working at a fresh Czech startup [GoOut.net](https://goout.net/). It's a cultural guide, ticket selling solution, and social network. I grew there from writing my first simple PHP scripts to deploying complex backend services gaining most of my practical skills along the way. Here are some projects I did there:
+For the last 5 years, I've been working at a tech startup [GoOut.net](https://goout.net/). I grew there from writing my first simple PHP scripts to deploying complex backend services gaining most of my practical skills along the way. Here are some projects I did there:
 
 ### Social Feed
-I've designed, written and deployed a microservice that provides users with a personal news feed. Check it out! Its output is visible right on the [front page](https://goout.net/). Technically it's a Spring microservice written in Kotlin. Elasticsearch is used as data storage and the whole thing is deployed in Kubernetes on GKE.
+I designed, written and deployed a microservice that provides users with a personal news feed. Check it out! Its output is visible right on the [front page](https://goout.net/). Technically it's a Spring microservice written in Kotlin. Elasticsearch is used as data storage and the whole thing is deployed in Kubernetes on GKE.
 
 ### Facebook Event Scrapper
-Some time ago Facebook closed their Events API. That was quite a bummer for GoOut as we need to know all the cultural events so I built an automatic scrapper using Selenium. It emulates a user traversing facebook pages scraping events along the way. Again it runs as a dockerized application in our Kubernetes cluster and uses Elasticsearch for storage. Since its deployment, it has scrapped tens of thousands of events. But, please, don't tell Facebook. .)
+Some time ago Facebook closed their Events API. That was quite a bummer for GoOut as we need to know all the cultural events so I built an automatic scrapper using Selenium. It emulates a user traversing facebook pages scraping events along the way. Again, it runs as a dockerized application in our Kubernetes cluster and uses Elasticsearch for storage. Since its deployment, it has scrapped tens of thousands of events. Don't tell Facebook. .)
 
 ### Other Projects at GoOut
 I've migrated many parts of our old monolithic architecture to Kubernetes microservices. I've built [several](https://coloursselection.cz/cs/) [websites](https://mestanskabeseda.cz/) for [cultural](https://www.divadlobolkapolivky.cz/) [venues](https://palladium.pl/en/) on WordPress. I've initiated usage of Kafka throughout our architecture. Lastly, I passed what I gained to over 10 freshman programmers who joined GoOut later.
@@ -35,7 +35,7 @@ GoOut is my first real programming job. Prior that (during high school) I was fu
 - I want to be the stupidest in the room constantly learning new stuff.
 - I enjoy the process of development from feature specification to deployment. I like to have a say in every stage of that process.
 - I have no interest in working for digital agencies spitting one app after another. I'd rather work on one product gradually bringing it to perfection.
-- Showing up in one office every day seems like a thing of the past century to me. Remote is the way to roll.
+- Remote is the way to roll.
 
 ## Where to catch me
 - [jen@buhvi.co](mailto:jen@buhvi.co)

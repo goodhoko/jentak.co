@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cursor {
+    position: absolute;
+}
+
+.cursor:nth-child(2n) {
+    background-color: black;
+}
+
+.cursor:nth-child(2n+1) {
+    background-color: white;
+}

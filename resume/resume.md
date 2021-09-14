@@ -1,44 +1,49 @@
 # Jan Koutný
-Young software engineer with a taste for hard problems.
+Software Engineer with attention to detail.
 
-## What I'm good at
-- **Learning** has always been my top strength. I'm fast at understanding complex problems and I genuinely enjoy it. I'm always seeking new stuff to wrap my head around.
-- Due to this craving for the knowledge I always try to **understand how things work**. When I use some tools, language, paradigm, etc. I get to know how it works hence I can deduce what are the right ways to use it. I avoid blindly moving stuff around until it works.
-- **I'm not a coding robot.** When I'm tasked with a job I must know its purpose. I can question, contradict or extend the task if it doesn't seem sensible or complete.
-- Technologies I'm fluent in include Kotlin, PHP, Docker, Kubernetes, GCP, (My)SQL, Elasticsearch, GIT, WordPress, Javascript.
+## Job experience
 
-## What I'm not good at
-- **Quickly bodging dirty solutions** is definitely not my forte.
-- **Estimating time and effort** needed to finish a task is a skill I both need and want to improve.
-- Although I've been doing it in my past jobs **managing people** is an area I could be much better in.
+### Typescript Developer at [Trezor](https://trezor.io/) (Mar 2021 – Jul 2021)
+- [Helped developing](https://github.com/trezor/trezor-suite/pulls?q=is%3Apr+author%3Agoodhoko) an Electron app that provides a GUI for the [Trezor](https://trezor.io/) hardware wallet.
+- Established a culture of code documentation.
+- Learned that it's usually better to listen first and talk second.
 
-## Stuff I've done
-For the last 5 years, I've been working at a tech startup [GoOut.net](https://goout.net/). I grew there from writing my first simple PHP scripts to deploying complex backend services gaining most of my practical skills along the way. Here are some projects I did there:
+### Backend Software Engineer at [GoOut](https://goout.net) (Sep 2015 – Feb 2021)
+- Established culture of writing feature and technical specifications.
+- Helped with choosing technologies, designing APIs and solving devOps challenges.
+- Designed, coded and deployed handful of APIs as microservices running in Kuberntes on GCP. Including activity feed (Kotlin/Spring/Elastic), user tracking (JS/Express), Facebook events scrapper (JS/Selenium) or cities and locations service (Kotlin/http4k/Elastic).
+- Coded and deployed several WordPress websites for theatres and other cultural institutions. Also later helped to run them all on Kubernetes.
+- Led a team of interns responsible for scraping cultural events from hundreds of websites. And implemented CI/CD for them.
+- Kicked of my coding experience by writing hundreds of small JS scripts and PHP web scrapers.
 
-### Social Feed
-I designed, written and deployed a microservice that provides users with a personal news feed. Check it out! Its output is visible right on the [front page](https://goout.net/). Technically it's a Spring microservice written in Kotlin. Elasticsearch is used as data storage and the whole thing is deployed in Kubernetes on GKE.
+### Prague Sheriff at [Rekola](https://www.rekola.cz/) (Sep 2012 – Sep 2015)
+- Managed smooth operation of Prague's most popular bike sharing.
+- Led a team of bicycle repairmen servicing fleet of hundreds of bicycles.
+- Designed, built, serviced and repurposed old and new bicycles.
 
-### Facebook Event Scrapper
-Some time ago Facebook closed their Events API. That was quite a bummer for GoOut as we need to know all the cultural events so I built an automatic scrapper using Selenium. It emulates a user traversing facebook pages scraping events along the way. Again, it runs as a dockerized application in our Kubernetes cluster and uses Elasticsearch for storage. Since its deployment, it has scrapped tens of thousands of events. Don't tell Facebook. .)
+## Open Source Projects and Contributions
+- [Contributed](https://github.com/editorconfig/editorconfig/issues/429) to the [.editorconfig](https://editorconfig.org/) specification.
+- Trying to [maintain](https://github.com/goodhoko/zadnyspech) a [blog](https://zadnyspe.ch/) about my advantures and hobby projects.
+- Helped some bits on these projects: [http4k](https://github.com/http4k/http4k/pulls?q=is%3Apr+author%3Agoodhoko), [rouge](https://github.com/rouge-ruby/rouge/pulls?q=is%3Apr+author%3Agoodhoko), [ktlint](https://github.com/pinterest/ktlint/pulls?q=is%3Apr+author%3Agoodhoko).
+- [Library od bicycle parts](https://github.com/goodhoko/bicycle_parts) designed with OpenSCAD for 3D printing. (Though it's just one part so far 😅.)
 
-### Other Projects at GoOut
-I've migrated many parts of our old monolithic architecture to Kubernetes microservices. I've built [several](https://coloursselection.cz/cs/) [websites](https://mestanskabeseda.cz/) for [cultural](https://www.divadlobolkapolivky.cz/) [venues](https://palladium.pl/en/) on WordPress. I've initiated usage of Kafka throughout our architecture. Lastly, I passed what I gained to over 10 freshman programmers who joined GoOut later.
-
-### Previous Jobs
-GoOut is my first real programming job. Prior that (during high school) I was fulfilling my enthusiasm at [Rekola](https://www.rekola.cz/) where I grew from bicycle mechanic to a 'Prague Sherrif' coordinating bike-sharing traffic across the whole city. Bicycles are a big part of my life and I still occasionally do custom bike building for friends.
-
-### Education
+## Education
 - Bachelor in Knwoledge Engineering at [Faculty of Information Technology](https://fit.cvut.cz/en) of [Czech Technical University](https://www.cvut.cz/en) (2015 - 2019)
 - Math focused class at [Gymnázium Christiana Dopplera](https://gchd.cz/) highschool (2010 - 2015)
 
-## Stuff I'd like to do
-- I want to be the stupidest in the room constantly learning new stuff.
-- I enjoy the process of development from feature specification to deployment. I like to have a say in every stage of that process.
-- I have no interest in working for digital agencies spitting one app after another. I'd rather work on one product gradually bringing it to perfection.
-- Remote is the way to roll.
+## Skills
+Technologies I consider myself to be fluent in include Kotlin, JS/TS, PHP, git, bash, kubernetes, Elastic Search, SQL, Google Cloud Platform, Electron...
 
-## Where to catch me
+## Interests
+I started playing with Rust and I believe it's the language I want to learn next. It seems like and ideal tool for getting closer to the metal.
+
+I like to balance my software day job by doing a lot of manual work in my freetime. Currently, I'm building a campervan from the ground up. I [build bicycles](https://zadnyspe.ch/tags/stavba-kol/) and sometimes [other stuff](https://zadnyspe.ch/tags/handwork/). I'd really like to work on an embedded project in my next job to bridge the hardware and software worlds.
+
+Other than that I ride bicycles a lot, sometimes do some track&field races (1500 - 5000 m), [shoot analog](https://photos.app.goo.gl/c7gePUvpRWoE9CCw9), paraglide, rock climb, enjoy good music or [trainhop](https://zadnyspe.ch/tags/nakladni-vlaky/).
+
+## Contacts
 - [jen@buhvi.co](mailto:jen@buhvi.co)
+- [matrix](https://matrix.org/): @goodhoko:matrix.org
 - [+420 774 619 385](tel:+420774619385) (Telegram, WhatsApp)
-- [linkedin.com/in/jankoutny/](https://www.linkedin.com/in/jankoutny/)
-- [blog](https://zadnyspe.ch) (czech only)
+- [linkedin](https://www.linkedin.com/in/jankoutny/)
+- [blog](https://zadnyspe.ch)

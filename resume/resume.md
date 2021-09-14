@@ -1,5 +1,5 @@
 # Jan Koutný
-Software Engineer with attention to detail.
+Software Engineer with attention to detail, interested in learning Rust and working on embedded projects to bridge the hardware and software worlds.
 
 ## Job experience
 
@@ -23,21 +23,21 @@ Software Engineer with attention to detail.
 
 ## Open Source Projects and Contributions
 - [Contributed](https://github.com/editorconfig/editorconfig/issues/429) to the [.editorconfig](https://editorconfig.org/) specification.
-- Trying to [maintain](https://github.com/goodhoko/zadnyspech) a [blog](https://zadnyspe.ch/) about my advantures and hobby projects.
-- Helped some bits on these projects: [http4k](https://github.com/http4k/http4k/pulls?q=is%3Apr+author%3Agoodhoko), [rouge](https://github.com/rouge-ruby/rouge/pulls?q=is%3Apr+author%3Agoodhoko), [ktlint](https://github.com/pinterest/ktlint/pulls?q=is%3Apr+author%3Agoodhoko).
-- [Library od bicycle parts](https://github.com/goodhoko/bicycle_parts) designed with OpenSCAD for 3D printing. (Though it's just one part so far 😅.)
+- Trying to [maintain](https://github.com/goodhoko/zadnyspech) a [blog](https://zadnyspe.ch/) about my adventures and hobby projects.
+- Helped with some bits on these projects: [http4k](https://github.com/http4k/http4k/pulls?q=is%3Apr+author%3Agoodhoko), [rouge](https://github.com/rouge-ruby/rouge/pulls?q=is%3Apr+author%3Agoodhoko), [ktlint](https://github.com/pinterest/ktlint/pulls?q=is%3Apr+author%3Agoodhoko).
+- [Library of bicycle parts](https://github.com/goodhoko/bicycle_parts) designed with OpenSCAD for 3D printing. (Though it's just one part so far 😅.)
 
 ## Education
-- Bachelor in Knwoledge Engineering at [Faculty of Information Technology](https://fit.cvut.cz/en) of [Czech Technical University](https://www.cvut.cz/en) (2015 - 2019)
+- Knowledge Engineering at [Faculty of Information Technology](https://fit.cvut.cz/en) of [Czech Technical University](https://www.cvut.cz/en) (2015 - 2019)
 - Math focused class at [Gymnázium Christiana Dopplera](https://gchd.cz/) highschool (2010 - 2015)
 
 ## Skills
-Technologies I consider myself to be fluent in include Kotlin, JS/TS, PHP, git, bash, kubernetes, Elastic Search, SQL, Google Cloud Platform, Electron...
+Technologies I consider myself to be fluent in include Kotlin, JS/TS, PHP, git, bash, Docker, Kubernetes, Elastic Search, SQL, Google Cloud Platform, Electron...
 
 ## Interests
 I started playing with Rust and I believe it's the language I want to learn next. It seems like and ideal tool for getting closer to the metal.
 
-I like to balance my software day job by doing a lot of manual work in my freetime. Currently, I'm building a campervan from the ground up. I [build bicycles](https://zadnyspe.ch/tags/stavba-kol/) and sometimes [other stuff](https://zadnyspe.ch/tags/handwork/). I'd really like to work on an embedded project in my next job to bridge the hardware and software worlds.
+I like to balance my software day job by doing a lot of manual work in my free time. Currently, I'm building a camper van from the ground up. I [build bicycles](https://zadnyspe.ch/tags/stavba-kol/) and sometimes [other stuff](https://zadnyspe.ch/tags/handwork/). I'd really like to work on an embedded project in my next job to bridge the hardware and software worlds.
 
 Other than that I ride bicycles a lot, sometimes do some track&field races (1500 - 5000 m), [shoot analog](https://photos.app.goo.gl/c7gePUvpRWoE9CCw9), paraglide, rock climb, enjoy good music or [trainhop](https://zadnyspe.ch/tags/nakladni-vlaky/).
 

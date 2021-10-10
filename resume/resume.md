@@ -1,5 +1,5 @@
 # Jan Koutný
-Software Engineer with attention to detail, interested in learning Rust and working on embedded projects to bridge the hardware and software worlds.
+Backend software engineer with high attention to detail.
 
 ## Job experience
 
@@ -8,9 +8,10 @@ Software Engineer with attention to detail, interested in learning Rust and work
 - Established a culture of code documentation.
 - Learned that it's usually better to listen first and talk second.
 
-### Backend Software Engineer at [GoOut](https://goout.net) (Sep 2015 – Feb 2021)
+### Software Engineer at [GoOut](https://goout.net) (Sep 2015 – Feb 2021)
 - Established culture of writing feature and technical specifications.
 - Helped with choosing technologies, designing APIs and solving devOps challenges.
+- Co-led a major refactoring effort that scaled GoOut from a few selected cities to any region or village in multiple countries.
 - Designed, coded and deployed handful of APIs as microservices running in Kuberntes on GCP. Including activity feed (Kotlin/Spring/Elastic), user tracking (JS/Express), Facebook events scrapper (JS/Selenium) or cities and locations service (Kotlin/http4k/Elastic).
 - Coded and deployed several WordPress websites for theatres and other cultural institutions. Also later helped to run them all on Kubernetes.
 - Led a team of interns responsible for scraping cultural events from hundreds of websites. And implemented CI/CD for them.
@@ -23,8 +24,9 @@ Software Engineer with attention to detail, interested in learning Rust and work
 
 ## Open Source Projects and Contributions
 - [Contributed](https://github.com/editorconfig/editorconfig/issues/429) to the [.editorconfig](https://editorconfig.org/) specification.
-- Trying to [maintain](https://github.com/goodhoko/zadnyspech) a [blog](https://zadnyspe.ch/) about my adventures and hobby projects.
+- A [Microservice](https://gitlab.com/gooutopensource/locations-kt-http4k) built on Http4k over ElasticSearch serving Cities and Regions that represent real-world locations within [GoOut](https://goout.net) infrastructure. Also its [Ktor-based version](https://gitlab.com/gooutopensource/locations-kt-ktor).
 - Helped with some bits on these projects: [http4k](https://github.com/http4k/http4k/pulls?q=is%3Apr+author%3Agoodhoko), [rouge](https://github.com/rouge-ruby/rouge/pulls?q=is%3Apr+author%3Agoodhoko), [ktlint](https://github.com/pinterest/ktlint/pulls?q=is%3Apr+author%3Agoodhoko).
+- Trying to [maintain](https://github.com/goodhoko/zadnyspech) a [blog](https://zadnyspe.ch/) about my adventures and hobby projects.
 - [Library of bicycle parts](https://github.com/goodhoko/bicycle_parts) designed with OpenSCAD for 3D printing. (Though it's just one part so far 😅.)
 
 ## Education

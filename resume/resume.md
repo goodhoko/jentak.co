@@ -45,7 +45,7 @@ I like to balance my software day job by doing a lot of manual work in my free t
 Other than that I ride bicycles a lot, sometimes do some track&field races (1500 - 5000 m), [shoot analog](https://photos.app.goo.gl/c7gePUvpRWoE9CCw9), paraglide, rock climb, enjoy good music or [trainhop](https://zadnyspe.ch/tags/nakladni-vlaky/).
 
 ## Contacts
-- [jen@buhvi.co](mailto:jen@buhvi.co)
+- [me@jentak.co](mailto:me@jentak.co)
 - [matrix](https://matrix.org/): @goodhoko:matrix.org
 - [+420 774 619 385](tel:+420774619385) (Telegram, WhatsApp)
 - [linkedin](https://www.linkedin.com/in/jankoutny/)

@@ -57,7 +57,9 @@ document.body.onmouseup = function() {
   document.body.style.cursor = 'grab'
 }
 
-
+function updateDisplay(gradient: string) {
+    document.getElementById('display')!.innerHTML = `<h2>${gradient}</h2>`
+}
 
 document.addEventListener('mousemove', function(e: MouseEvent) {
     if (mouseDown) {
@@ -74,6 +76,7 @@ document.addEventListener('mousemove', function(e: MouseEvent) {
 
 
         this.body.style.background = gradient
+        updateDisplay(gradient)
         console.log(gradient)
     }
 })

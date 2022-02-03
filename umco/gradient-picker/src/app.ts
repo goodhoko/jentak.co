@@ -39,7 +39,7 @@ class Step {
     }
 
 
-    public getDirectionDegress() {
+    public getDirectionDegrees() {
         return (360 + 180 * this.directionRadians / Math.PI) % 360 
     }
 
@@ -67,8 +67,8 @@ document.addEventListener('mousemove', function(e: MouseEvent) {
         const px = e.clientX / window.innerWidth * 100
         const py = e.clientY / window.innerHeight * 100
     
-        const color: Color = new Color(step.getDirectionDegress(), px, py)
-        const altColor = new Color(lastStep && lastStep.getDirectionDegress() || 0, px, py)
+        const color: Color = new Color(step.getDirectionDegrees(), px, py)
+        const altColor = new Color(lastStep && lastStep.getDirectionDegrees() || 0, px, py)
         
         const gradient = `radial-gradient(circle, ${color}, ${altColor})`
 

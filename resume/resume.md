@@ -1,7 +1,13 @@
-# Jan Koutný
+# Jen Koutný
 Backend software engineer with high attention to detail.
 
 ## Job experience
+
+### Ruby on Rails Full-stack developer at [Fakturoid](https://www.fakturoid.cz/) (Nov 2021 – Jul 2022)
+- Revamped full-text search built on Elastic.
+- Helped the team to adopt code-review healthy for both authors and reviewers.
+- Kickstarted codification of architecture with Kubernetes on Digital Ocean.
+- Learned how a fully remote shop can remain pleasant and keep everyone in touch.
 
 ### Typescript Developer at [Trezor](https://trezor.io/) (Mar 2021 – Jul 2021)
 - [Helped developing](https://github.com/trezor/trezor-suite/pulls?q=is%3Apr+author%3Agoodhoko) an Electron app that provides a GUI for the [Trezor](https://trezor.io/) hardware wallet.
@@ -38,7 +44,7 @@ Backend software engineer with high attention to detail.
 Technologies I consider myself to be fluent in include Kotlin, JS/TS, PHP, git, bash, Docker, Kubernetes, Elastic Search, SQL, Google Cloud Platform, Electron...
 
 ## Interests
-I started playing with Rust and I believe it's the language I want to learn next. It seems like and ideal tool for getting closer to the metal.
+I started playing with Rust and I believe it's the language I want to master. It seems like and ideal next step in my journey of getting closer to the metal.
 
 I like to balance my software day job by doing a lot of manual work in my free time. Currently, I'm building a camper van from the ground up. I [build bicycles](https://zadnyspe.ch/tags/stavba-kol/) and sometimes [other stuff](https://zadnyspe.ch/tags/handwork/). I'd really like to work on an embedded project in my next job to bridge the hardware and software worlds.
 

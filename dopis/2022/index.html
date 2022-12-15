@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Milý Ježíšku</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			* { cursor: none !important; }
+			body {
+				margin: 0;
+				padding: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: white;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				line-height: 1.4em;
+			}
+			.letter, .orgs {
+				padding: 2em 2em 0 2em;
+				max-width: 600px;
+				text-align: justify;
+				margin: 0 auto;
+				position: relative;
+				z-index: 10;
+			}
+			a, a:visited {
+				color: inherit;
+				text-decoration: none;
+			}
+			.letter a {
+				text-decoration: underline;
+			}
+			
+			.letter {
+				color: black;
+			}
+
+			.orgs {
+				color: white;
+			}
+			
+			.org span {
+				text-decoration: underline;
+			}
+			
+			.cursor {
+				background-color: black;
+			}
+
+			.org {
+				margin: 0 0 1em 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="letter">
+			<h1>Milý Ježíšku,</h1>
+			<p>
+				budou to tři roky co jsem ti naposled adresoval
+				<a href="../2019/">dopis</a>. Přál jsem si tehdy
+				jedinou věc: abys mě prostě vynechal z tradice
+				dávání dárků. Moje přání se sice nezměnilo, ale musel
+				jsem uznat, že splnit ho je nad (nebo spíš pod?)
+				tvoje síly. Jsi prostě moc štědrý!
+			</p>
+			<p>
+				Pojďme to letos zkusit trochu jinak. Původního cíle se
+				nevzdávám: žádné dárky s mým jménem ať pod stromečkem
+				nejsou! Pokusím se ti ale pomoct nasměrovat tvojí
+				štědrost směrem, který dává smysl i mně. Dám ti tipy na
+				spolky, které nezištně konají dobro a každá koruna je
+				jim dobrá. Jsou aktivní v oblastech, které mně osobně
+				přijdou nejpalčivější: ochrana životního prostředí,
+				transformace měst lidem a rovnoprávnost (nejen) žen.
+				Společné mají to, že usilují o systémové změny, což je
+				podle mě jediný způsob, jak se můžeme pohnout dál.
+			</p>
+			<p>
+				Věřím, že si vybereš!
+			</p>	
+		</div>
+		<div class="orgs">
+			<a class="org" href="https://frankbold.org/podporte-nas" target="_blank">
+				<p><span>Frank Bold</span> je kolektiv advokátů, který používá právo jako nástroj k prosazování nejen udržitelné energetiky.</p>
+			</a>
+
+			<a class="org" href="https://www.donio.cz/prispevek/829" target="_blank">
+				<p><span>Společně Proti Suchu</span> organizuje velkou skupinu dobrovolníků, která připravuje podrobný plán obnovy krajiny celého Česka směrem k biodiverzitě, odolnosti proti klimatické změně a schopnosti zadržovat vodu.</p>
+			</a>
+
+			<a class="org" href="https://mossy.earth/" target="_blank">
+				<p><span>Mossy Earth</span> za vlastní (darované) peníze vykupuje pozemky všude možně po světě, aby na nich ve spolupráci s vědci obnovoval dřív zničené ekosystémy.</p>
+			</a>
+
+			<a class="org" href="https://auto-mat.cz/" target="_blank">
+				<p><span>Automat</span> nám dlouhý roky pomáhá dělat jízdu na kole Prahou příjemější, krotí přebujelý auta a rozvíjí sousedský vztahy.</p>
+			</a>
+
+			<a class="org" href="https://arnika.org/darujte" target="_blank">
+				<p><span>Arnika</span> toho má v agendě hodně. Například čistotu vodních toků, hlídání často nespoutaného developmentu v Praze nebo třeba stromových alejí podél silnic.</p>
+			</a>
+
+			<a class="org" href="https://www.beztrestu.cz/darkovy-certifikat" target="_blank">
+				<p><span>Bez Trestu</span> se krom mapování těžko uvěřitelných statistik o sexuálním a domácím násílí snaží prosazovat jeho férovější tresty.</p>
+			</a>
+
+			<a class="org" href="https://konsent.cz/" target="_blank">
+				<p><span>Konsent</span> se sexuálnímu násilí snaží předcházet hlavně osvětou a vzděláváním.</p>
+			</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		const Cursor = function(getA, styles) {
+			this.node = document.createElement('div');
+			this.node.setAttribute("class", "cursor")
+			Object.assign(this.node.style, {
+				...styles,
+				position: 'fixed',
+				cursor: 'none',
+			})
+
+			document.body.appendChild(this.node)
+
+			this.positionTo = function(b) {
+				const a = getA();
+
+				// console.log(a.x, a.y, b.x, b.y, "w", Math.abs(b.x - a.x), "h", Math.abs(b.y - a.y))
+				
+				this.node.style.left = `${Math.min(a.x, b.x)}px`;
+				this.node.style.top = `${Math.min(a.y, b.y)}px`;
+				this.node.style.width = `${Math.abs(b.x - a.x)}px`;
+				this.node.style.height = `${Math.abs(b.y - a.y)}px`;
+			};
+
+		};
+
+		window.onload = () => {
+			const top_left = new Cursor(
+				() => ({x: 0, y: 0}),
+				{
+					borderRadius: "0 0 5px 0",
+					transformOrigin: "100% 100%",
+				}
+			);
+			const bottom_right = new Cursor(
+				() => ({x: window.innerWidth, y: window.innerHeight}),
+				{
+					borderRadius: "5px 0 0 0",
+					transformOrigin: "0% 0%",
+				}
+			);
+			
+			window.onmousemove = (event) => {
+				top_left.positionTo({x: event.clientX, y: event.clientY});
+				bottom_right.positionTo({x: event.clientX, y: event.clientY});
+			}
+		}
+	</script>
+</html>

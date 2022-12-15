@@ -11,7 +11,7 @@
 				padding: 0;
 				width: 100vw;
 				height: 100vh;
-				background-color: white;
+				background-color: #ffeff6;
 				font-family: Georgia, 'Times New Roman', Times, serif;
 				line-height: 1.4em;
 			}
@@ -32,11 +32,11 @@
 			}
 			
 			.letter {
-				color: black;
+				color: #1f171b;
 			}
 
 			.orgs {
-				color: white;
+				color: #ffeff6;
 			}
 			
 			.org span {
@@ -44,11 +44,20 @@
 			}
 			
 			.cursor {
-				background-color: black;
+				background-color: #1f171b;
 			}
 
 			.org {
 				margin: 0 0 1em 0;
+			}
+
+			@media only screen and (hover: none) {
+				.orgs {
+					color: #1f171b;
+				}
+				.cursor {
+					display: none;
+				}
 			}
 		</style>
 	</head>

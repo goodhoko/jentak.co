@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Milý Ježíšku</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <style>
+      * {
+        cursor: none !important;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+      }
+      .bug {
+        background-color: orange;
+        width: 10px;
+        height: 10px;
+        transition: transform 0.1s cubic-bezier( 0.15, 0.87, 0.58, 1.9 ) ;
+        position: fixed;
+      }
+      .beam {
+        background-color: white;
+        transition: color 1s ease-in-out;
+        transition: transform 0.3s cubic-bezier( 0.15, 0.87, 0.58, 1.9 ) ;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="beam"></div>
+    <div class="bug"></div>
+  </body>
+  <script type="text/javascript">
+    window.onload = () => {
+      const beam = document.getElementsByClassName("beam")[0];
+      const bug = document.getElementsByClassName("bug")[0];
+
+      window.onmousemove = function followCursor(event) {
+        const { width, height } = beam.getBoundingClientRect()
+
+        beam.style.transform = `translateX(${event.clientX - width / 2}px)`
+        beam.style.transform += `translateY(${event.clientY - height / 2}px)`
+      };
+
+
+      setInterval(function spawnBug() {
+        let {x, y, height, width } = beam.getBoundingClientRect() 
+        const { height: bug_height, width: bug_width } = bug.getBoundingClientRect()
+        x = x + width / 2;
+        y = y + height / 2;
+
+        bug.style.transform = `translateX(${x - bug_width / 2}px)`
+        bug.style.transform += `translateY(${y - bug_height / 2}px)`
+      }, 5000);
+      
+
+      const velocity = { x: 10, y: 10 }
+      setInterval(function changeMindOfBug() {
+        velocity.x = (Math.random() - 0.5) * 30,
+        velocity.y = (Math.random() - 0.5) * 30
+      }, 1000)
+
+      setInterval(function moveBug() {
+        let {x, y} = bug.getBoundingClientRect();
+
+        bug.style.transform = `translateX(${x + velocity.x}px)`
+        bug.style.transform += `translateY(${y + velocity.y}px)`
+      }, 50)
+    };
+
+  function rotate(v, deg) {
+
+  }
+  </script>
+</html>

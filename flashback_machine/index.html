@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flashback Machine</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="robots" content="noindex" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0 2em;
+        transition: background-color 500ms ease-in-out 0s;
+      }
+
+      a,
+      a:visited {
+        color: inherit;
+      }
+
+      .shuffle_button_wrp {
+        margin: 1em 0 2em;
+        display: flex;
+        justify-content: center;
+      }
+
+      .shuffle_button {
+        text-align: center;
+        font-size: 3em;
+        cursor: pointer;
+        color: yellow;
+        -webkit-text-stroke: 2px red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-shadow: -2px 2px 0 red;
+        font-style: italic;
+      }
+
+      .shuffle_button:hover {
+        text-shadow: -5px 5px 0 red;
+      }
+
+      .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .avatar {
+        height: 25em;
+      }
+
+      .message_content {
+        font-size: 2em;
+        border: 2px solid white;
+        border-radius: 1em 1em 1em 0;
+        padding: 0.5em;
+        align-self: flex-start;
+        font-weight: bold;
+        color: white;
+        word-wrap: anywhere;
+      }
+
+      @media (max-width: 800px) {
+        .message {
+          flex-direction: column-reverse;
+        }
+
+        .message_content {
+          margin-bottom: 0.5em;
+          align-self: flex-end;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="shuffle_button_wrp">
+      <span class="shuffle_button"> FLASH! </span>
+    </div>
+    <div class="message"></div>
+  </body>
+
+  <script type="module">
+    import { decrypt } from "./crypto.js";
+    import { LZString } from "./lz_string.js";
+
+    window.onload = async () => {
+      const shuffle_button =
+        document.getElementsByClassName("shuffle_button")[0];
+      const message_box = document.getElementsByClassName("message")[0];
+      const messages = await fetchMessages();
+
+      shuffle_button.onclick = () => {
+        const message = randomSample(messages);
+        console.log(message);
+        message_box.innerHTML = render(message);
+        document.body.style.backgroundColor = getBackgroundColor(message);
+      };
+    };
+
+    async function fetchMessages() {
+      // Fetch the encrypted, compressed file.
+      const res = await fetch("./messages.json.encrypted");
+      const encrypted = await res.blob();
+      console.log("Fetched:", encrypted);
+
+      // Prompt for password and decrypt the file.
+      let decrypted;
+      let promptMessage = "Password please!";
+      while (decrypted === undefined) {
+        const password = prompt(promptMessage);
+        try {
+          decrypted = await decrypt(
+            await encrypted.arrayBuffer(),
+            password,
+            window.crypto
+          );
+        } catch (err) {
+          console.log(err);
+          promptMessage = "Sakryš! Wrong Password. Try again!";
+        }
+      }
+
+      // Decompress.
+      const decompressed = LZString.decompressFromUint8Array(
+        new Uint8Array(decrypted)
+      );
+
+      // Parse the JSON into an object and filter out unsupported message types.
+      return JSON.parse(decompressed).messages.filter((m) => {
+        return (
+          m.type === "message" &&
+          m.media_type === undefined &&
+          m.photo === undefined &&
+          m.text_entities.length > 0
+        );
+      });
+    }
+
+    function randomSample(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function render(message) {
+      return `
+        <img src="${getAvatarUrl(message)}" class="avatar">
+        <div class="message_content">${stringifyMessageContent(message)}</div>
+      `;
+    }
+
+    function stringifyMessageContent(m) {
+      return m.text_entities.reduce((acc, entity) => {
+        let text = "";
+        switch (entity.type) {
+          case "plain":
+          case "hashtag":
+          case "phone":
+          case "code":
+          case "text_link":
+          case "bank_card":
+          case "email":
+            text = `${entity.text}`;
+            break;
+          case "link":
+            text = `<a href="${entity.text}" target="_blank">${entity.text}</a>`;
+            break;
+          case "bold":
+            text = `<b>${entity.text}</b>`;
+            break;
+          case "italic":
+            text = `<i>${entity.text}</i>`;
+            break;
+          case "strikethrough":
+            text = `<s>${entity.text}</s>`;
+            break;
+          case "pre":
+            text = `<pre>${entity.text}</pre>`;
+            break;
+          case "underline":
+            text = `<u>${entity.text}</u>`;
+            break;
+        }
+        return acc + text;
+      }, "");
+    }
+
+    function getAvatarUrl(message) {
+      const name = message.from.split(" ")[0].toLowerCase();
+      const avatarsAvailable = name === "anna" ? 11 : 9;
+      const avatar = (message.id % avatarsAvailable) + 1;
+      return `./avatars/${name}/${avatar}.png`;
+    }
+
+    function getBackgroundColor(message) {
+      const colors = ["#4deeea", "#74ee15", "#f0cf00", "#f000ff", "#001eff"];
+      const colorsAvailable = colors.length;
+      const color = colors[message.id % colorsAvailable];
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</html>

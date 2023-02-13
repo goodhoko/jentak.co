@@ -1,4 +1,4 @@
-# Jen Koutný
+# Jen Koutny
 Backend software engineer with high attention to detail.
 
 ## Job experience

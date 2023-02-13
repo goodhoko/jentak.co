@@ -3,6 +3,13 @@ Backend software engineer with high attention to detail.
 
 ## Job experience
 
+### Backend design and implementation for [The One Club for Creativity ](https://www.oneclub.org/) (Aug 2022 – Jan 2023)
+- Closely collaborated with designers from [Creative Nights](https://creative-nights.com/) to spec out a brand new digital award platform (yet to be released).
+- Architected the backend stack on Strapi, Digital Ocean, Cloudinary and Stripe.
+- Built a custom testing solution, setup development environment, tooling and CI/CD pipelines.
+- Codified all infrastructure with Terraform and setup CD using Terraform Cloud.
+- Implemented the business logic and exposed an API to be used by frontend.
+
 ### Ruby on Rails Full-stack developer at [Fakturoid](https://www.fakturoid.cz/) (Nov 2021 – Jul 2022)
 - Revamped full-text search built on Elastic.
 - Helped the team to adopt code-review healthy for both authors and reviewers.

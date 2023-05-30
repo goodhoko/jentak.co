@@ -44,7 +44,7 @@ Backend software engineer with high attention to detail.
 - [Library of bicycle parts](https://github.com/goodhoko/bicycle_parts) designed with OpenSCAD for 3D printing. (Though it's just one part so far 😅.)
 
 ## Education
-- Knowledge Engineering at [Faculty of Information Technology](https://fit.cvut.cz/en) of [Czech Technical University](https://www.cvut.cz/en) (2015 - 2019)
+- Knowledge Engineering dropout at [Faculty of Information Technology](https://fit.cvut.cz/en) of [Czech Technical University](https://www.cvut.cz/en) (2015 - 2019)
 - Math focused class at [Gymnázium Christiana Dopplera](https://gchd.cz/) highschool (2010 - 2015)
 
 ## Skills
